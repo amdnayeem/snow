@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Innovate" max_length="40" name="x_546913_innovate_innovate" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="desc" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="_cost_savings" label="Ideatype" max_length="40" name="ideatype" type="choice">
+            <choice>
+                <element inactive_on_update="false" label=" Cost Savings" value="_cost_savings"/>
+                <element inactive_on_update="false" label="Process Improvement`" value="process_improvement"/>
+                <element inactive_on_update="false" label="Team Building" value="team_building"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="sdesc" max_length="125" name="short_description" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="New True/False" max_length="40" name="u_boolean_1" type="boolean"/>
+        <element attributes="omit_sys_original=true" default="0" label="Currency" max_length="20" name="u_currency_1" type="currency"/>
+        <element label="New Time" max_length="40" name="u_glide_time_2" type="glide_time"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
